@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Quarterlife: do real things, build a cozy room</title>
-<meta name="description" content="A pixel-art iPhone game for the days you feel like you did nothing. Check off real-life quests, earn credits, and furnish a room that shows the effort you actually put in.">
+<meta name="description" content="A pixel-art mobile game for the days you feel like you did nothing. Check off real-life quests, earn credits, and furnish a room that shows the effort you actually put in.">
 <meta property="og:title" content="Quarterlife">
-<meta property="og:description" content="Do real things. Build a cozy room. Join the waitlist for the iPhone game.">
+<meta property="og:description" content="Do real things. Build a cozy room. Join the waitlist for the game on iPhone and Android.">
 <meta property="og:image" content="img/room-night.png">
 <link rel="icon" type="image/png" href="img/favicon.png">
 <style>
@@ -53,6 +53,10 @@
   .check { display: flex; gap: 10px; align-items: flex-start; margin-top: 12px; font-size: 15px; cursor: pointer; }
   .check input { width: 20px; height: 20px; margin: 2px 0 0; accent-color: var(--sage-deep); flex: none; }
   .fine { font-size: 13px; color: var(--shadow); margin: 12px 0 0; }
+  .platform { border: 0; padding: 0; margin: 10px 0 0; display: flex; gap: 18px; flex-wrap: wrap; align-items: center; font-size: 15px; }
+  .platform legend { float: left; margin-right: 6px; padding: 0; color: #6b5a66; }
+  .platform label { display: inline-flex; gap: 6px; align-items: center; cursor: pointer; }
+  .platform input { width: 18px; height: 18px; margin: 0; accent-color: var(--sage-deep); }
   .setup-note { display: none; margin-top: 12px; padding: 10px 12px; background: #fde9e4; border: 2px dashed var(--terra-dark); font-size: 14px; }
   .setup-note.show { display: block; }
 
@@ -118,7 +122,8 @@
           <input id="email-top" type="email" name="email_address" placeholder="you@example.com" required autocomplete="email">
           <button class="go" type="submit">Join</button>
         </div>
-        <label class="check"><input type="checkbox" name="fields[beta]" value="yes"> Invite me to test early builds on my iPhone (TestFlight)</label>
+        <label class="check"><input type="checkbox" name="fields[beta]" value="yes"> Invite me to test early builds</label>
+        <fieldset class="platform"><legend>My phone is</legend><label><input type="radio" name="fields[platform]" value="iphone"> iPhone</label><label><input type="radio" name="fields[platform]" value="android"> Android</label></fieldset>
         <p class="fine">One email when it launches, plus the odd dev update. Unsubscribe anytime. Your email is never sold or shared.</p>
         <p class="setup-note">Sign-ups aren't switched on yet: this page still needs its Kit form link.</p>
       </form>
@@ -179,7 +184,8 @@
         <input id="email-bottom" type="email" name="email_address" placeholder="you@example.com" required autocomplete="email">
         <button class="go" type="submit">Join</button>
       </div>
-      <label class="check"><input type="checkbox" name="fields[beta]" value="yes"> Invite me to test early builds on my iPhone (TestFlight)</label>
+      <label class="check"><input type="checkbox" name="fields[beta]" value="yes"> Invite me to test early builds</label>
+        <fieldset class="platform"><legend>My phone is</legend><label><input type="radio" name="fields[platform]" value="iphone"> iPhone</label><label><input type="radio" name="fields[platform]" value="android"> Android</label></fieldset>
       <p class="fine">Unsubscribe anytime. Never sold or shared.</p>
       <p class="setup-note">Sign-ups aren't switched on yet: this page still needs its Kit form link.</p>
     </form>
@@ -188,7 +194,7 @@
 
 <footer>
   <div class="wrap">
-    <span>© 2026 Quarterlife. iPhone game in development.</span>
+    <span>© 2026 Quarterlife. Coming to iPhone and Android.</span>
     <span><a href="https://www.instagram.com/playquarterlife" rel="noopener">Instagram</a> · <a href="https://www.tiktok.com/@playquarterlife" rel="noopener">TikTok</a><span class="js-discord-wrap"> · <a class="js-discord" href="#" rel="noopener">Discord</a></span></span>
   </div>
 </footer>
