@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>You're on the list · Quarterlife</title>
+<link rel="icon" type="image/png" href="img/favicon.png">
+<style>
+  @font-face { font-family: "Tiny5"; src: url("fonts/Tiny5-Regular.ttf") format("truetype"); }
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #3d2d4b; color: #f7ebcf; font: 17px/1.55 ui-rounded, system-ui, -apple-system, "Segoe UI", sans-serif; text-align: center; padding: 24px; }
+  .card { max-width: 30em; }
+  img { width: 96px; height: 96px; image-rendering: pixelated; border-radius: 16px; }
+  h1 { font-family: "Tiny5", monospace; font-weight: normal; font-size: 44px; margin: 18px 0 10px; color: #f4c96b; }
+  p { color: #e1cdaa; }
+  a.btn { font-family: "Tiny5", monospace; font-size: 19px; display: inline-block; margin: 10px 6px 0; padding: 10px 18px; border: 3px solid #17131c; border-radius: 4px; box-shadow: 0 4px 0 #17131c; text-decoration: none; color: #3f3645; background: #98ba91; }
+  a.back { background: #f7ebcf; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <img src="img/icon-256.png" alt="">
+    <h1>You're on the list!</h1>
+    <p>Check your inbox for a quick email to confirm it's you. Until then, come hang out while the room gets built.</p>
+    <a class="btn js-discord" href="#">Join the Discord</a>
+    <a class="btn back" href="./">Back</a>
+  </div>
+<script>
+  // Same Discord invite as index.html.
+  const DISCORD_INVITE = "https://discord.gg/qEEVyFkmZn";
+  document.querySelectorAll(".js-discord").forEach((link) => { if (DISCORD_INVITE) link.href = DISCORD_INVITE; else link.style.display = "none"; });
+</script>
+</body>
+</html>
